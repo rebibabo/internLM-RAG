@@ -1,0 +1,42 @@
+EXPENSE REIMBURSEMENT
+
+
+
+Name Date
+Period
+
+
+
+
+
+
+
+kk
+
+
+
+Final Estimate
+Total Advanced Funds	
+Reimbursement Amount	
+Refunding Amount	
+Reissue Amount	
+
+
+
+
+EXPENSE DETAIL
+Date	Locations	Receipt
+No.	Business Purpose	Travel	Meal	Lodging	Other	Currency	Rate	Amount	Exchange for RMB
+											
+											
+											
+											
+											
+											
+											
+											
+Sub Total	0	0	0	0	Total Expense	0	0
+
+Employee:	Sales
+Director:	
+	Cashier:	Recheck:

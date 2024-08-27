@@ -1,0 +1,56 @@
+Your English name
+21A, Bristol Road, Hertford Mansion, Singapore 219847
+Phone:  ¡¤ Email: 
+Nationality: Chinese (Present Resident in Singapore)
+
+OBJECTIVE
+A student Graduated in 2009 encountered the most difficult period in Singapore to get job opportunities after 2008 financial crisis. Though she finally became a technician not easily, in now 2010, she dares to take a big step forward to challenge another one! She prefers doing a actively technician rather than boring one!
+PROFESSIONAL EXPERIENCE
+	WORLD SCIENTIFIC PUBLISHING COMPANY
+E-Pub Executive
+	¡¡Liaise with Marketing, Editorial and Information System department to update daily maintenance on website:
+	?Determine products hardcopy publishing date and softcopy posting date; ensure timely and accurate e-products posting date;
+?Confirm with editors for author details (name, affiliation, article footnote and total pages), SGML and XML coding time, books' copyright, product material, price, etc. 
+	Technical led by supervisor for the implementation of products management software project and provide software support for external and internal servers operation:
+	?Ensured hardware and software compliance and compatibility, develop program for different cases, support remote locations with Net Access Internet VPN;
+?Analyse servers¡¯ storage system and arrange issue in rational and write test plan, converted original products from existing source to be operable; implemented daily backup job;
+?Ensure new issue updated on company website. Monitor purchasing system is on working environment and the clients have access permission
+	¡¡Respond the last step before products publishing:
+	?Optimize products layout according with authors' requirement;
+?Compose automation scripts. Review and debug error log files(if any). Develop program, give feedback to Project Team and vendor for online system enhancement;
+?establish solution of problem list and give notice to other team players;
+?Documents results and observations after inspections and audits
+	
+	DELL, SINGAPORE
+Temp Customer Service Staff
+	Handling all after sales service related issues:
+	?Recommend service options and schedule installations for phone, fax and computer lines. Provide detailed to customer calls for prevention of future audit issues.
+?At least 50 After-sales service calls on everyday with voice recorder. Updated customers on number of products purchasing including China mainland, Hong Kong district. This is proposal to protect the DELL selling agent from supplying the contracted commodity to any other buyer(s) in other territory.
+?Collected all customer related complaints through various method i.e. hotline, website, email etc. Ensure all complains can be settled in a proper time.
+EDUCATION BACKGROUND:
+	NGEE ANN POLYTECHNIC, SINAGPORE
+DIPLOMA*, Electronic and Computer Engineering
+	?Obtain 3 years tuition grant from Singapore Government for Ngee Ann Polytechnic 
+?Main courses of study: Embedded System Design, Robotics, Data Communication and Networking, Programming Language;
+?Final Year Project: Built a Robot Colony* and Participated in the Singapore Robot Game in Feb 2009;
+
+TECHNICAL SKILL:
+Platform	WINDOWS 9X/NT/2000/XP, LINUX
+Languages	PERLS, C++, HTML, XML, GML
+Software	?MS VS development tool;
+?Crimson Editor(including any other lots kind of editor software);
+?Adobe Series software: Photoshop(creative in designing modern cover), PDF Professional, Flash
+?Microsoft Office: Word, Excel, Power Point, Access(Excellent in doing kinds of access)
+?AutoCad
+Hardware	PCs, VPNs, Motorola PowerPC, Intel; PCB Board Designing, Integrated Circuit Designing
+Others	Excellent in Engineering Mathematics (Attained A grade)
+
+LANGUAGE:
+?Mandarin (Native)
+?Cantonese (Fluent)
+?English (Fluent)
+?Teochew (Dialects)
+AFFLIATION
+Member, Teochew Poit Ip Huay Kuan, No. 97, Tank Road, Singapore 238066
+
+* Supporting documentation furnished Upon Request.

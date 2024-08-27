@@ -1,0 +1,12 @@
+　　　得到了清晰的文字纸稿图片后，我们就需要使用office软件中的一个小工具“Microsoft Office Document Imaging”来进行文字识别了，一般安装好office后会默认安装在系统中的。 
+　　　打开Word，点击菜单“插入 → 图片 → 来自文件”，把纸稿图片插入到文档中，再点击菜单“文件 → 打印”，在弹出”窗口的“打印机”下拉列表框中选择“Microsoft Office Document Imaging Writer”，点击“确定”按钮会弹出一个保存窗口，我们设置一下文件保存的路径和文件名，Word会把文档保存为MDI格式的（如果使用的是office2007，则Word会把它保存为TIFF图片格式）。如图2： 
+
+图2
+　　　接下来双击打开前面保存的MDI文档，可以看见图片显示在左侧栏中，在右侧栏用鼠标把要进行识别的文字用红色线框起来，选好后点击菜单“工具－使用OCR识别文本”，这时软件就会对所选区域进行文字识别了（如图3）。 
+
+图3
+　　　小提示：如果使用的是office2007，则需要从程序菜单中点击“Microsoft Office → Microsoft Office 工具 → Microsoft Office Document Scanning”，在打开的“Document Scanning”软件中点击菜单“文件 → 打开”来打开前面保存的TIFF文件。
+　　　识别好后图片中的文字就可以进行选择了，把需要的内容全部选中，再点击菜单“工具”，将文本发送到Word”，这时会弹出一个对话框，我们选择里面的“当前选择范围”，并把下面的“在输出时保持图片版式不变”选中，完成后点击“确定”按钮，这样就可以在新建的Word文档中看见识别出来的文字（如图4）。 
+
+图4
+　　　小提示：网上的一些精简版的office软件是没有“Microsoft Office Document Scanning”这个小工具的，需要安装完整版的office才有。 
