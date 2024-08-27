@@ -11,8 +11,8 @@ OPENAI_API_KEY="sk-your api key"
 OPENAI_API_BASE="https://api.gptsapi.net/v1"
 HF_HOME="/root/autodl-tmp/huggingface"
 HF_ENDPOINT="https://hf-mirror.com"
-DASHSCOPE_API_KEY="sk-your api key"
 LLAMA_CLOUD_API_KEY="llx-your api key"
+# DASHSCOPE_API_KEY="sk-your api key"
 # OPENAI_API_BASE="https://dashscope.aliyuncs.com/compatible-mode/v1"
 ```
 - HF_HOME为huggingface缓存加载位置
