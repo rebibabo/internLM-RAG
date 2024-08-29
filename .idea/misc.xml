@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Black">
-    <option name="sdkName" value="Remote unknown interpreter (sftp://yuanzhongsheng@richsos@192.168.32.117@192.168.8.248:2222/internLM-RAG/bin/python)" />
-  </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Remote unknown interpreter (sftp://yuanzhongsheng@richsos@192.168.32.117@192.168.8.248:2222/internLM-RAG/bin/python)" project-jdk-type="Python SDK" />
-</project>
