@@ -1,5 +1,7 @@
 import warnings
 warnings.filterwarnings('ignore')
+import os
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 from loguru import logger
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.llms.openai import OpenAI
@@ -163,6 +165,6 @@ if __name__ == "__main__":
             rag.query(question, gt_answer)
             output = rag.output
             print(json.dumps(output, indent=4, ensure_ascii=False))
-        
+
         with open(output_path, 'w') as f:
             json.dump({"results": rag.output_jsons}, f, indent=4, ensure_ascii=False)

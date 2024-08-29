@@ -5,3 +5,4 @@ llama-index-llms-huggingface
 einops
 loguru
 ragchecker
+bitsandbytes
