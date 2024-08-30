@@ -23,3 +23,6 @@ LLAMA_CLOUD_API_KEY="llx-your api key"
 运行RAG.py，对dataset中指定的`file_type`类型的文件进行RAG问答，问答结果将保存在output目录下。
 
 运行evaluate.py，对output目录下的json文件进行评估，使用了[RAGChecker](https://github.com/amazon-science/RAGChecker)指标，结果保存在result目录下。
+
+运行效果
+![image](https://github.com/user-attachments/assets/370c53c0-99a6-4d34-8e52-627e441a85ab)
