@@ -30,7 +30,7 @@ if __name__ == "__main__":
     ]
 
     # rag = RAG(model="unsloth/Qwen2.5-7B-Instruct-bnb-4bit", huggingface=True, n=2)
-    rag = RAG(model="gpt-4o-mini", n=2, huggingface=False)
+    rag = RAG(model="gpt-4o-mini", n=2, huggingface=False, n=2)
     for file_id in range(1, 11):
         output_dir = os.path.join('output', file_type)
         if not os.path.exists(output_dir):

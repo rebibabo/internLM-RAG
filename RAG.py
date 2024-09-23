@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 from loguru import logger
-from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.llms.openai import OpenAI
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core import (PromptTemplate, Settings, 
@@ -52,6 +51,7 @@ class RAG:
         ) -> None:
         logger.info(f"chunk size: {chunk_size}, overlap: {chunk_overlap}, max length: {max_length}, temperature: {temperature}")
         if huggingface:
+            from llama_index.llms.huggingface import HuggingFaceLLM
             logger.info(f"Using HuggingFace model {model}")
             llm = HuggingFaceLLM(
                 context_window=2048,
