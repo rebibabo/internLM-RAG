@@ -69,16 +69,14 @@ class RAG:
             logger.info(f"Using OpenAI model {model}")
             llm = OpenAI(
                 model=model,
-                api_key=os.getenv("DASHSCOPE_API_KEY"),
-                api_base="https://dashscope.aliyuncs.com/compatible-mode/v1",
+                api_key=os.getenv("OPENAI_API_KEY"),
+                api_base=os.getenv("OPENAI_BASE_URL"),
                 temperature=temperature,
                 max_tokens=max_length,
             )
         self.n = n
         Settings.llm = llm
         self.llm = llm
-        tokenzier = AutoTokenizer.from_pretrained(model, trust_remote_code=True)
-        self.tokenizer = tokenzier
         text_splitter = SentenceSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
         Settings.text_splitter = text_splitter
 
