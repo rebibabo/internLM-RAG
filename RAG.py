@@ -1,7 +1,8 @@
 import warnings
 warnings.filterwarnings('ignore')
+from dotenv import load_dotenv
+load_dotenv()
 import os
-os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 from loguru import logger
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.llms.openai import OpenAI
@@ -13,10 +14,7 @@ from transformers import AutoTokenizer, BitsAndBytesConfig
 from llama_parse import LlamaParse
 from typing import Literal
 from copy import deepcopy
-import pandas as pd
-from dotenv import load_dotenv
-load_dotenv()
-import json
+
 import os
 
 class RAG:
@@ -66,6 +64,7 @@ class RAG:
                 model_kwargs={"trust_remote_code": True, "quantization_config": BitsAndBytesConfig(load_in_4bit=True)},
                 device_map="auto",
             )
+            logger.info(f"Finished loading model!")
         else:    # use openai
             logger.info(f"Using OpenAI model {model}")
             llm = OpenAI(
@@ -76,7 +75,6 @@ class RAG:
                 max_tokens=max_length,
             )
         self.n = n
-        logger.info(f"Finished loading!")
         Settings.llm = llm
         self.llm = llm
         tokenzier = AutoTokenizer.from_pretrained(model, trust_remote_code=True)
@@ -128,43 +126,3 @@ class RAG:
     @ property
     def output(self):
         return self.output_jsons[-1]
-
-
-def load_dataset(
-    file_type: Literal["csv", "doc", "docx", "markdown", "pdf", "ppt", "pptx", "txt", "xls", "xlsx"],
-    file_id: int
-) -> tuple[list[str], list[str]]:
-    questions, gt_answers = [], []
-    df = pd.read_excel('dataset/Q&A.xlsx')
-    for index, row in df.iterrows():
-        if index == 0 or int(row[0][:2]) != file_id:
-            continue
-        _, _, question, gt_answer = row
-        questions.append(question)
-        gt_answers.append(gt_answer)
-    return questions, gt_answers
-
-if __name__ == "__main__":
-    file_type = "txt"
-    rag = RAG(model="internlm/internlm2_5-7b-chat", huggingface=True, n=2)
-    for file_id in range(1, 11):
-        output_dir = os.path.join('output', file_type)
-        if not os.path.exists(output_dir):
-            os.makedirs(output_dir)
-        output_path = f'{output_dir}/{file_id}.json'
-        if os.path.exists(output_path):
-            continue
-        logger.info(f"Processing {file_type} file {file_id}...")
-        questions, gt_answers = load_dataset(file_type, file_id)
-        for file in os.listdir(f'dataset/{file_type}'):
-            if file.startswith(f'{file_id:02d}'):
-                src_path = f'dataset/{file_type}/{file}'
-                break
-        rag.indexing(result_type="text", src_path=src_path)
-        for question, gt_answer in zip(questions, gt_answers):
-            rag.query(question, gt_answer)
-            output = rag.output
-            print(json.dumps(output, indent=4, ensure_ascii=False))
-
-        with open(output_path, 'w') as f:
-            json.dump({"results": rag.output_jsons}, f, indent=4, ensure_ascii=False)
